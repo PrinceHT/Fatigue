@@ -58,6 +58,7 @@ namespace Fatigue
                 txtlogad1.DataBindings.Add(new Binding("Text", cBoxSN.DataSource, "logd1"));
                 txtm2.Text = "5";
                 txtlogad2.DataBindings.Add(new Binding("Text", cBoxSN.DataSource, "logd2"));
+                txtk.DataBindings.Add(new Binding("Text", cBoxSN.DataSource, "k"));
             }
 
         }

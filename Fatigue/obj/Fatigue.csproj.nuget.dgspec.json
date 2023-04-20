@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue\\Fatigue.csproj": {}
+    "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue\\Fatigue.csproj": {
+    "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue\\Fatigue.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue.csproj",
         "projectName": "Fatigue",
-        "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue\\Fatigue.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\Fatigue\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Fatigue\\Fatigue\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

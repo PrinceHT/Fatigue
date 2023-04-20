@@ -1,0 +1,14 @@
+# encoding: utf-8
+# 2021 R1
+SetScriptVersion(Version="21.1.216")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+system2 = GetSystem(Name="SYS 2")
+model2 = system2.GetContainer(ComponentName="Model")
+model2.Edit()
+system1.DisplayText = "FULL"
+system2.DisplayText = "QUATER"
+system3 = GetSystem(Name="SYS 1")
+system3.DisplayText = "OVAL"
+Save(Overwrite=True)

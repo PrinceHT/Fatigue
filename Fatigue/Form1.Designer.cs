@@ -42,25 +42,58 @@
             txtlogad1 = new TextBox();
             txtm2 = new TextBox();
             txtlogad2 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
+            txtkneeCycles = new TextBox();
+            txtWei = new TextBox();
+            txtnomStress = new TextBox();
+            txtYearinS = new TextBox();
+            label9 = new Label();
+            txtv0 = new TextBox();
+            label10 = new Label();
+            txteffThick = new TextBox();
+            label11 = new Label();
+            txtk = new TextBox();
+            label12 = new Label();
+            txtgammam1 = new TextBox();
+            label13 = new Label();
+            txtq = new TextBox();
+            label14 = new Label();
+            txtn0 = new TextBox();
+            label15 = new Label();
+            txtTd = new TextBox();
+            label16 = new Label();
+            txtLife = new TextBox();
+            label17 = new Label();
+            txtDamage = new TextBox();
+            label18 = new Label();
+            txtgammadm2 = new TextBox();
+            label19 = new Label();
+            txtgammadm1 = new TextBox();
+            label20 = new Label();
+            txtS1h = new TextBox();
+            label21 = new Label();
+            txtkneeStress = new TextBox();
+            label22 = new Label();
+            txtgammam2 = new TextBox();
+            label23 = new Label();
+            txtReferThick = new TextBox();
+            label24 = new Label();
+            btnCalculate = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgExcel).BeginInit();
             SuspendLayout();
             // 
             // dtgExcel
             // 
             dtgExcel.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgExcel.Location = new Point(482, 12);
+            dtgExcel.Location = new Point(882, 12);
             dtgExcel.Name = "dtgExcel";
             dtgExcel.RowTemplate.Height = 25;
-            dtgExcel.Size = new Size(934, 626);
+            dtgExcel.Size = new Size(534, 374);
             dtgExcel.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 36);
+            label1.Location = new Point(12, 15);
             label1.Name = "label1";
             label1.Size = new Size(66, 15);
             label1.TabIndex = 1;
@@ -69,7 +102,7 @@
             // cBoxSN
             // 
             cBoxSN.FormattingEnabled = true;
-            cBoxSN.Location = new Point(258, 33);
+            cBoxSN.Location = new Point(258, 12);
             cBoxSN.Name = "cBoxSN";
             cBoxSN.Size = new Size(121, 23);
             cBoxSN.TabIndex = 2;
@@ -77,7 +110,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 68);
+            label2.Location = new Point(12, 44);
             label2.Name = "label2";
             label2.Size = new Size(158, 15);
             label2.TabIndex = 3;
@@ -86,7 +119,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 100);
+            label3.Location = new Point(12, 73);
             label3.Name = "label3";
             label3.Size = new Size(138, 15);
             label3.TabIndex = 4;
@@ -95,7 +128,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 134);
+            label4.Location = new Point(12, 102);
             label4.Name = "label4";
             label4.Size = new Size(168, 15);
             label4.TabIndex = 5;
@@ -104,7 +137,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 173);
+            label5.Location = new Point(12, 131);
             label5.Name = "label5";
             label5.Size = new Size(110, 15);
             label5.TabIndex = 6;
@@ -113,7 +146,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 207);
+            label6.Location = new Point(12, 160);
             label6.Name = "label6";
             label6.Size = new Size(129, 15);
             label6.TabIndex = 7;
@@ -122,7 +155,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(12, 278);
+            label7.Location = new Point(12, 218);
             label7.Name = "label7";
             label7.Size = new Size(121, 15);
             label7.TabIndex = 9;
@@ -131,7 +164,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(12, 244);
+            label8.Location = new Point(12, 189);
             label8.Name = "label8";
             label8.Size = new Size(102, 15);
             label8.TabIndex = 8;
@@ -140,7 +173,7 @@
             // txtm1
             // 
             txtm1.Enabled = false;
-            txtm1.Location = new Point(258, 170);
+            txtm1.Location = new Point(258, 128);
             txtm1.Name = "txtm1";
             txtm1.Size = new Size(100, 23);
             txtm1.TabIndex = 10;
@@ -148,7 +181,7 @@
             // txtlogad1
             // 
             txtlogad1.Enabled = false;
-            txtlogad1.Location = new Point(258, 204);
+            txtlogad1.Location = new Point(258, 157);
             txtlogad1.Name = "txtlogad1";
             txtlogad1.Size = new Size(100, 23);
             txtlogad1.TabIndex = 11;
@@ -156,7 +189,7 @@
             // txtm2
             // 
             txtm2.Enabled = false;
-            txtm2.Location = new Point(258, 241);
+            txtm2.Location = new Point(258, 186);
             txtm2.Name = "txtm2";
             txtm2.Size = new Size(100, 23);
             txtm2.TabIndex = 12;
@@ -164,40 +197,357 @@
             // txtlogad2
             // 
             txtlogad2.Enabled = false;
-            txtlogad2.Location = new Point(258, 275);
+            txtlogad2.Location = new Point(258, 215);
             txtlogad2.Name = "txtlogad2";
             txtlogad2.Size = new Size(100, 23);
             txtlogad2.TabIndex = 13;
             // 
-            // textBox5
+            // txtkneeCycles
             // 
-            textBox5.Location = new Point(258, 131);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 14;
+            txtkneeCycles.Location = new Point(258, 99);
+            txtkneeCycles.Name = "txtkneeCycles";
+            txtkneeCycles.Size = new Size(100, 23);
+            txtkneeCycles.TabIndex = 16;
+            txtkneeCycles.Text = "10000000";
             // 
-            // textBox6
+            // txtWei
             // 
-            textBox6.Location = new Point(258, 97);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 15;
+            txtWei.Location = new Point(258, 70);
+            txtWei.Name = "txtWei";
+            txtWei.Size = new Size(100, 23);
+            txtWei.TabIndex = 15;
+            txtWei.Text = "1.1";
             // 
-            // textBox7
+            // txtnomStress
             // 
-            textBox7.Location = new Point(258, 65);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 23);
-            textBox7.TabIndex = 16;
+            txtnomStress.Location = new Point(258, 41);
+            txtnomStress.Name = "txtnomStress";
+            txtnomStress.Size = new Size(100, 23);
+            txtnomStress.TabIndex = 14;
+            txtnomStress.Text = "131.61";
+            // 
+            // txtYearinS
+            // 
+            txtYearinS.Location = new Point(258, 244);
+            txtYearinS.Name = "txtYearinS";
+            txtYearinS.Size = new Size(100, 23);
+            txtYearinS.TabIndex = 18;
+            txtYearinS.Text = "20";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(12, 247);
+            label9.Name = "label9";
+            label9.Size = new Size(81, 15);
+            label9.TabIndex = 17;
+            label9.Text = "Year in service";
+            // 
+            // txtv0
+            // 
+            txtv0.Location = new Point(258, 273);
+            txtv0.Name = "txtv0";
+            txtv0.Size = new Size(100, 23);
+            txtv0.TabIndex = 20;
+            txtv0.Text = "0.159";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(12, 276);
+            label10.Name = "label10";
+            label10.Size = new Size(177, 15);
+            label10.TabIndex = 19;
+            label10.Text = "Zero up-crossing freequency: v0";
+            // 
+            // txteffThick
+            // 
+            txteffThick.Location = new Point(258, 302);
+            txteffThick.Name = "txteffThick";
+            txteffThick.Size = new Size(100, 23);
+            txteffThick.TabIndex = 22;
+            txteffThick.Text = "30";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(12, 305);
+            label11.Name = "label11";
+            label11.Size = new Size(137, 15);
+            label11.TabIndex = 21;
+            label11.Text = "Effective thickness (mm)";
+            // 
+            // txtk
+            // 
+            txtk.Enabled = false;
+            txtk.Location = new Point(258, 360);
+            txtk.Name = "txtk";
+            txtk.Size = new Size(100, 23);
+            txtk.TabIndex = 24;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(12, 363);
+            label12.Name = "label12";
+            label12.Size = new Size(120, 15);
+            label12.TabIndex = 23;
+            label12.Text = "Thickness exponent k";
+            // 
+            // txtgammam1
+            // 
+            txtgammam1.Enabled = false;
+            txtgammam1.Location = new Point(673, 128);
+            txtgammam1.Name = "txtgammam1";
+            txtgammam1.Size = new Size(100, 23);
+            txtgammam1.TabIndex = 32;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(427, 131);
+            label13.Name = "label13";
+            label13.Size = new Size(103, 15);
+            label13.TabIndex = 31;
+            label13.Text = "Gamma (1+m1/h)";
+            // 
+            // txtq
+            // 
+            txtq.Enabled = false;
+            txtq.Location = new Point(673, 99);
+            txtq.Name = "txtq";
+            txtq.Size = new Size(100, 23);
+            txtq.TabIndex = 30;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(427, 102);
+            label14.Name = "label14";
+            label14.Size = new Size(146, 15);
+            label14.TabIndex = 29;
+            label14.Text = "Weibull scale parameter: q";
+            // 
+            // txtn0
+            // 
+            txtn0.Enabled = false;
+            txtn0.Location = new Point(673, 70);
+            txtn0.Name = "txtn0";
+            txtn0.Size = new Size(100, 23);
+            txtn0.TabIndex = 28;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(427, 73);
+            label15.Name = "label15";
+            label15.Size = new Size(176, 15);
+            label15.TabIndex = 27;
+            label15.Text = "Calculated number of cycles: n0";
+            // 
+            // txtTd
+            // 
+            txtTd.Enabled = false;
+            txtTd.Location = new Point(673, 41);
+            txtTd.Name = "txtTd";
+            txtTd.Size = new Size(100, 23);
+            txtTd.TabIndex = 26;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(427, 44);
+            label16.Name = "label16";
+            label16.Size = new Size(111, 15);
+            label16.TabIndex = 25;
+            label16.Text = "Td = Time in service";
+            // 
+            // txtLife
+            // 
+            txtLife.Enabled = false;
+            txtLife.Location = new Point(673, 331);
+            txtLife.Name = "txtLife";
+            txtLife.Size = new Size(100, 23);
+            txtLife.TabIndex = 46;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(427, 334);
+            label17.Name = "label17";
+            label17.Size = new Size(156, 15);
+            label17.TabIndex = 45;
+            label17.Text = "Calculated life time T (years)";
+            // 
+            // txtDamage
+            // 
+            txtDamage.Enabled = false;
+            txtDamage.Location = new Point(673, 302);
+            txtDamage.Name = "txtDamage";
+            txtDamage.Size = new Size(100, 23);
+            txtDamage.TabIndex = 44;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(427, 305);
+            label18.Name = "label18";
+            label18.Size = new Size(163, 15);
+            label18.TabIndex = 43;
+            label18.Text = "Calculated fatigue damage: D";
+            // 
+            // txtgammadm2
+            // 
+            txtgammadm2.Enabled = false;
+            txtgammadm2.Location = new Point(673, 273);
+            txtgammadm2.Name = "txtgammadm2";
+            txtgammadm2.Size = new Size(100, 23);
+            txtgammadm2.TabIndex = 42;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(427, 276);
+            label19.Name = "label19";
+            label19.Size = new Size(232, 15);
+            label19.TabIndex = 41;
+            label19.Text = "Gamma distribution P((1+m2/h),(S1/q)^h)";
+            // 
+            // txtgammadm1
+            // 
+            txtgammadm1.Enabled = false;
+            txtgammadm1.Location = new Point(673, 244);
+            txtgammadm1.Name = "txtgammadm1";
+            txtgammadm1.Size = new Size(100, 23);
+            txtgammadm1.TabIndex = 40;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(427, 247);
+            label20.Name = "label20";
+            label20.Size = new Size(232, 15);
+            label20.TabIndex = 39;
+            label20.Text = "Gamma distribution P((1+m1/h),(S1/q)^h)";
+            // 
+            // txtS1h
+            // 
+            txtS1h.Enabled = false;
+            txtS1h.Location = new Point(673, 215);
+            txtS1h.Name = "txtS1h";
+            txtS1h.Size = new Size(100, 23);
+            txtS1h.TabIndex = 38;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(427, 218);
+            label21.Name = "label21";
+            label21.Size = new Size(54, 15);
+            label21.TabIndex = 37;
+            label21.Text = "(S1/q)^h";
+            // 
+            // txtkneeStress
+            // 
+            txtkneeStress.Enabled = false;
+            txtkneeStress.Location = new Point(673, 186);
+            txtkneeStress.Name = "txtkneeStress";
+            txtkneeStress.Size = new Size(100, 23);
+            txtkneeStress.TabIndex = 36;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(427, 189);
+            label22.Name = "label22";
+            label22.Size = new Size(164, 15);
+            label22.TabIndex = 35;
+            label22.Text = "Stress at knee in S-N curve: S1";
+            // 
+            // txtgammam2
+            // 
+            txtgammam2.Enabled = false;
+            txtgammam2.Location = new Point(673, 157);
+            txtgammam2.Name = "txtgammam2";
+            txtgammam2.Size = new Size(100, 23);
+            txtgammam2.TabIndex = 34;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(427, 160);
+            label23.Name = "label23";
+            label23.Size = new Size(103, 15);
+            label23.TabIndex = 33;
+            label23.Text = "Gamma (1+m2/h)";
+            // 
+            // txtReferThick
+            // 
+            txtReferThick.Location = new Point(258, 331);
+            txtReferThick.Name = "txtReferThick";
+            txtReferThick.Size = new Size(100, 23);
+            txtReferThick.TabIndex = 48;
+            txtReferThick.Text = "25";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(12, 334);
+            label24.Name = "label24";
+            label24.Size = new Size(111, 15);
+            label24.TabIndex = 47;
+            label24.Text = "Reference thickness";
+            // 
+            // btnCalculate
+            // 
+            btnCalculate.Location = new Point(673, 363);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(100, 23);
+            btnCalculate.TabIndex = 49;
+            btnCalculate.Text = "Calculate";
+            btnCalculate.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1428, 650);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
+            ClientSize = new Size(1428, 396);
+            Controls.Add(btnCalculate);
+            Controls.Add(txtReferThick);
+            Controls.Add(label24);
+            Controls.Add(txtLife);
+            Controls.Add(label17);
+            Controls.Add(txtDamage);
+            Controls.Add(label18);
+            Controls.Add(txtgammadm2);
+            Controls.Add(label19);
+            Controls.Add(txtgammadm1);
+            Controls.Add(label20);
+            Controls.Add(txtS1h);
+            Controls.Add(label21);
+            Controls.Add(txtkneeStress);
+            Controls.Add(label22);
+            Controls.Add(txtgammam2);
+            Controls.Add(label23);
+            Controls.Add(txtgammam1);
+            Controls.Add(label13);
+            Controls.Add(txtq);
+            Controls.Add(label14);
+            Controls.Add(txtn0);
+            Controls.Add(label15);
+            Controls.Add(txtTd);
+            Controls.Add(label16);
+            Controls.Add(txtk);
+            Controls.Add(label12);
+            Controls.Add(txteffThick);
+            Controls.Add(label11);
+            Controls.Add(txtv0);
+            Controls.Add(label10);
+            Controls.Add(txtYearinS);
+            Controls.Add(label9);
+            Controls.Add(txtnomStress);
+            Controls.Add(txtWei);
+            Controls.Add(txtkneeCycles);
             Controls.Add(txtlogad2);
             Controls.Add(txtm2);
             Controls.Add(txtlogad1);
@@ -235,8 +585,41 @@
         private TextBox txtlogad1;
         private TextBox txtm2;
         private TextBox txtlogad2;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox txtkneeCycles;
+        private TextBox txtWei;
+        private TextBox txtnomStress;
+        private TextBox txtYearinS;
+        private Label label9;
+        private TextBox txtv0;
+        private Label label10;
+        private TextBox txteffThick;
+        private Label label11;
+        private TextBox txtk;
+        private Label label12;
+        private TextBox txtgammam1;
+        private Label label13;
+        private TextBox txtq;
+        private Label label14;
+        private TextBox txtn0;
+        private Label label15;
+        private TextBox txtTd;
+        private Label label16;
+        private TextBox txtLife;
+        private Label label17;
+        private TextBox txtDamage;
+        private Label label18;
+        private TextBox txtgammadm2;
+        private Label label19;
+        private TextBox txtgammadm1;
+        private Label label20;
+        private TextBox txtS1h;
+        private Label label21;
+        private TextBox txtkneeStress;
+        private Label label22;
+        private TextBox txtgammam2;
+        private Label label23;
+        private TextBox txtReferThick;
+        private Label label24;
+        private Button btnCalculate;
     }
 }

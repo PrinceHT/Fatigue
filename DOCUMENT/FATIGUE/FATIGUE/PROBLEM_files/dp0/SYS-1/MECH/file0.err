@@ -1,0 +1,18 @@
+/COM,ANSYS RELEASE 2021 R1           BUILD 21.1      UP20201109       21:38:43
+
+ *** WARNING ***                         CP =       0.812   TIME= 21:38:44
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.875   TIME= 21:38:44
+ Material number 8 (used by element 16416) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       0.906   TIME= 21:38:44
+ Overconstraint may occur for Lagrange multiplier or MPC based contact   
+ algorithm.                                                              
+
+ *** WARNING ***                         CP =       0.906   TIME= 21:38:44
+ Certain contact elements (for example 16414 & 16117) overlap with       
+ other.                                                                  
