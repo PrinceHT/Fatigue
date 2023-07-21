@@ -7,6 +7,9 @@ using System.Numerics;
 using System.Windows.Forms;
 using System;
 using CenterSpace.Free;
+using MathNet.Numerics;
+using MathNet.Numerics.Distributions;
+//using UnityEngine;
 
 namespace Fatigue
 {
@@ -18,7 +21,7 @@ namespace Fatigue
         List<UserInfo2> dataPrint2 = new List<UserInfo2>();
         List<NormalDist> normalDists = new List<NormalDist>();
         public double nomStress = 131.61, Wei = 1.1, kneeCycles = 1e7, yearinS = 20, v0 = 0.159, effThick = 30, ReferThick = 25, SCF = 3;
-        public double Td, n0, q, gammam1, gammam2, kneeStress, S1h, gammadm1, gammadm2, Damage, Life;
+        public double Td, n0, q, gammam1, gammam2, kneeStress, S1h, gammadm1, gammadm2, Damage, Life, tSize;
 
         private void txtSCF_TextChanged(object sender, EventArgs e)
         {
@@ -100,7 +103,7 @@ namespace Fatigue
         {
             if (z < 0.5)
             {
-                return Math.PI / (Math.Sin(Math.PI * z) * Gamma(1 - z)) ;
+                return Math.PI / (Math.Sin(Math.PI * z) * Gamma(1 - z));
             }
             else
             {
@@ -123,26 +126,35 @@ namespace Fatigue
             txtn0.Text = n0.ToString();
             gammam1 = Gamma(1 + double.Parse(txtm1.Text) / Wei);
             gammam2 = Gamma(1 + double.Parse(txtm2.Text) / Wei);
-            txtgammam1.Text = gammam1.ToString();
-            txtgammam2.Text = gammam2.ToString();
+            txtgammam1.Text = gammam1.ToString("F3");
+            txtgammam2.Text = gammam2.ToString("F3");
             q = nomStress * SCF / Math.Pow((Math.Log(n0)), (1 / Wei));
-            txtq.Text = q.ToString();
+            if (effThick <= ReferThick) txtThicksize.Text = 1.ToString();
+            else txtThicksize.Text = Math.Pow(effThick / ReferThick, double.Parse(txtk.Text)).ToString("F3");
+            tSize = double.Parse(txtThicksize.Text);
+            txtq.Text = q.ToString("F3");
             kneeStress = Math.Pow(10, (double.Parse(txtlogad1.Text) - Math.Log10(kneeCycles)) / double.Parse(txtm1.Text));
-            txtkneeStress.Text = kneeStress.ToString();
+            txtkneeStress.Text = kneeStress.ToString("F3");
             S1h = Math.Pow(kneeStress / q, Wei);
-            txtS1h.Text = S1h.ToString();
-            //gammadm1 = Math.Pow(S1h,double.Parse(txtm1.Text) / Wei) * Math.Pow(Math.E, -S1h) / Gamma(1 + double.Parse(txtm1.Text) / Wei);
-            //gammadm1 = Math.Pow(S1h, double.Parse(txtm1.Text) / Wei) * Math.Pow(Math.E, -S1h);
-            //gammadm1=Gamma(1+double.Parse(txtm1.Text) / Wei);
-            //gammadm2 = Math.Pow(S1h, double.Parse(txtm2.Text) / Wei) * Math.Pow(Math.E, -S1h) /gammam2;
-            //txtgammadm1.Text = gammadm1.ToString();
-            //txtgammadm2.Text = gammadm2.ToString();
-            NormalDist dist1 = new NormalDist(Wei*q,Wei*Math.Pow(q,2));
-            gammadm1 = dist1.CDF(1 + double.Parse(txtm1.Text) / Wei);
-            NormalDist dist2 = new NormalDist(1 + double.Parse(txtm2.Text) / Wei, 1);
-            gammadm2 = dist2.CDF(S1h);
-            txtgammadm1.Text = gammadm1.ToString();
-            txtgammadm2.Text = gammadm2.ToString();
+            txtS1h.Text = S1h.ToString("F3");
+            alglib alglib = new alglib();
+            gammadm1 = alglib.incompletegamma(1 + double.Parse(txtm1.Text) / Wei, S1h);
+            //gammadm1 = Gamma.CDF(1 + double.Parse(txtm1.Text) / Wei,1,S1h);
+            //NormalDist dist2 = new NormalDist(1 + double.Parse(txtm2.Text) / Wei, 1);
+            gammadm2 = alglib.incompletegamma(1 + double.Parse(txtm2.Text) / Wei, S1h);
+            txtgammadm1.Text = gammadm1.ToString("F3");
+            txtgammadm2.Text = gammadm2.ToString("F3");
+            Damage = (Math.Pow(tSize, double.Parse(txtm1.Text)) * n0 / (Math.Pow(10, double.Parse(txtlogad1.Text)))) * (Math.Pow(q, double.Parse(txtm1.Text))) * (1 - gammadm1) * gammam1 + (Math.Pow(tSize, double.Parse(txtm2.Text)) * n0 / (Math.Pow(10, double.Parse(txtlogad2.Text)))) * (Math.Pow(q, double.Parse(txtm2.Text))) * (gammadm2) * gammam2;
+            txtDamage.Text = Damage.ToString("F3");
+            Life = 20 / Damage;
+            txtLife.Text = Life.ToString("F3");
+        }
+
+        static double F(double x)
+        {
+            MathNet.Numerics.Distributions.Normal result = new MathNet.Numerics.Distributions.Normal();
+            return result.CumulativeDistribution(x);
+
         }
 
         public Form1()

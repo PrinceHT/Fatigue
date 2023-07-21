@@ -1,0 +1,14 @@
+/COM,ANSYS RELEASE 2021 R1           BUILD 21.1      UP20201109       22:14:02
+
+ *** WARNING ***                         CP =       2.156   TIME= 22:14:04
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       2.906   TIME= 22:14:04
+ Material number 51 (used by element 22518) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       5.406   TIME= 22:14:04
+ Node 1676 connects both contact element 13812 and target element 13824. 
+  Please check the model carefully.                                      
