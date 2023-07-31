@@ -1,0 +1,412 @@
+
+Job is running on hostname BTV-39026
+Job user from this host: vu.le
+Starting directory: C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+
+Reading control file C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811\control_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsm .... 
+Correct Cluster verified
+Cluster Type: ARC
+Underlying Cluster: ARC
+    RSM_CLUSTER_TYPE = ARC
+Compute Server is running on BTV-39026
+Reading commands and arguments...
+    Command 1: %AWP_ROOT232%\SEC\SolverExecutionController\runsec.bat, arguments: , redirectFile: None
+Running from shared staging directory ...
+    RSM_USE_LOCAL_SCRATCH = False
+    RSM_LOCAL_SCRATCH_DIRECTORY = 
+    RSM_LOCAL_SCRATCH_PARTIAL_UNC_PATH = 
+Cluster Shared Directory: C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+    RSM_SHARE_STAGING_DIRECTORY = C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+Job file clean up: True
+Use SSH on Linux cluster nodes: True
+    RSM_USE_SSH_LINUX = True
+LivelogFile: NOLIVELOGFILE
+StdoutLiveLogFile: stdout_0e6371c5-37ba-4d24-9c77-4725ef884a2b.live
+StderrLiveLogFile: stderr_0e6371c5-37ba-4d24-9c77-4725ef884a2b.live 
+Reading input files...
+    *.cgns
+    *.dat
+    *.mac
+    cp*.*
+    file*.*
+    knockdown.ist
+    thermal.build
+    SecInput.txt
+    nlad_mesh_input.msh
+    nlad_mesh_input.asc
+    *.comps
+    *.par
+    *.rth
+    commands.xml
+Reading cancel files...
+    sec.interrupt
+Reading output files...
+    *.NR*
+    *.bswf
+    *.swf
+    *.xml
+    *apip.json
+    AMHighStrain.txt
+    AMResults.txt
+    CAERepOutput.xml
+    Harmonic*.h5
+    Harmonic*.vtk
+    Load_*.inp
+    Modal*.h5
+    Modal*.vtk
+    Mode_mapping_*.txt
+    NotSupportedElems.dat
+    ObjectiveHistory.out
+    PostImage*.png
+    RemotePostInformation.txt
+    Static*.h5
+    Static*.vtk
+    cyclic_map.json
+    exit.topo
+    file*.dsub
+    file*.ldhi
+    file*.mntr
+    file*.png
+    file*.r0*
+    file*.r1*
+    file*.r2*
+    file*.r3*
+    file*.r4*
+    file*.r5*
+    file*.r6*
+    file*.r7*
+    file*.r8*
+    file*.r9*
+    file*.rd*
+    file*.rst
+    file*.sub
+    file.BCS
+    file.DSP
+    file.PCS
+    file.ce
+    file.cm
+    file.cnd
+    file.cnm
+    file.err
+    file.gst
+    file.json
+    file.nd*
+    file.nlh
+    file.nr*
+    file.rdb
+    file.rfl
+    file.spm
+    file0.BCS
+    file0.PCS
+    file0.ce
+    file0.cnd
+    file0.err
+    file0.gst
+    file0.nd*
+    file0.nlh
+    file0.nr*
+    frequencies_*.out
+    input.x17
+    intermediate*.topo
+    knockdown.ist
+    morphed*.stl
+    post.out
+    record.txt
+    solve*.out
+    structured_history.xml
+    topo.err
+    topo.out
+    topo_cyclic_map.txt
+    vars.topo
+    sec.validation.executed
+    *.comps
+    *.par
+    *.rth
+Reading exclude files...
+    stdout_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    stderr_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    control_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsm
+    hosts.dat
+    exitcode_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    exitcodeCommands_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    stdout_0e6371c5-37ba-4d24-9c77-4725ef884a2b.live
+    stderr_0e6371c5-37ba-4d24-9c77-4725ef884a2b.live
+    ClusterJobCustomization.xml
+    ClusterJobs.py
+    clusterjob_0e6371c5-37ba-4d24-9c77-4725ef884a2b.sh
+    clusterjob_0e6371c5-37ba-4d24-9c77-4725ef884a2b.bat
+    inquire.request
+    inquire.confirm
+    request.upload.rsm
+    request.download.rsm
+    wait.download.rsm
+    scratch.job.rsm
+    volatile.job.rsm
+    restart.xml
+    cancel_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    liveLogLastPositions_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsm
+    stdout_0e6371c5-37ba-4d24-9c77-4725ef884a2b_kill.rsmout
+    stderr_0e6371c5-37ba-4d24-9c77-4725ef884a2b_kill.rsmout
+    sec.interrupt
+    stdout_0e6371c5-37ba-4d24-9c77-4725ef884a2b_*.rsmout
+    stderr_0e6371c5-37ba-4d24-9c77-4725ef884a2b_*.rsmout
+    stdout_task_*.live
+    stderr_task_*.live
+    control_task_*.rsm
+    stdout_task_*.rsmout
+    stderr_task_*.rsmout
+    exitcode_task_*.rsmout
+    exitcodeCommands_task_*.rsmout
+Reading environment variables...
+    RSM_IRON_PYTHON_HOME = C:\Program Files\ANSYS Inc\ANSYS Student\v232\commonfiles\IronPython
+    RSM_TASK_WORKING_DIRECTORY = C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+    RSM_USE_SSH_LINUX = True
+    RSM_QUEUE_NAME = local
+    RSM_CONFIGUREDQUEUE_NAME = Local
+    RSM_COMPUTE_SERVER_MACHINE_NAME = BTV-39026
+    RSM_HPC_JOBNAME = Mechanical
+    RSM_HPC_DISPLAYNAME = FrameAnalysis-DP0-Model (A4)-Static Structural (A5)-Solution (A6)
+    RSM_HPC_CORES = 2
+    RSM_HPC_DISTRIBUTED = TRUE
+    RSM_HPC_NODE_EXCLUSIVE = FALSE
+    RSM_HPC_QUEUE = local
+    RSM_HPC_USER = BLUETECH\vu.le
+    RSM_HPC_WORKDIR = C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+    RSM_HPC_JOBTYPE = Workbench_ANSYS
+    RSM_HPC_ANSYS_LOCAL_INSTALL_DIRECTORY = C:\Program Files\ANSYS Inc\ANSYS Student\v232
+    RSM_HPC_VERSION = 232
+    RSM_HPC_STAGING = C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+    RSM_HPC_LOCAL_PLATFORM = Windows
+    RSM_HPC_CLUSTER_TARGET_PLATFORM = Windows
+    RSM_HPC_STDOUTFILE = stdout_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    RSM_HPC_STDERRFILE = stderr_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    RSM_HPC_STDOUTLIVE = stdout_0e6371c5-37ba-4d24-9c77-4725ef884a2b.live
+    RSM_HPC_STDERRLIVE = stderr_0e6371c5-37ba-4d24-9c77-4725ef884a2b.live
+    RSM_HPC_SCRIPTS_DIRECTORY_LOCAL = C:\Program Files\ANSYS Inc\ANSYS Student\v232\RSM\Config\scripts
+    RSM_HPC_SCRIPTS_DIRECTORY = C:\Program Files\ANSYS Inc\ANSYS Student\v232\RSM\Config\scripts
+    RSM_HPC_SUBMITHOST = localhost
+    RSM_HPC_STORAGEID = <JobId>    <id>2e064594-24b5-4ca2-8688-1921c9241892</id>    <nativeId>kancagaw.sab=LocalNoCopy#localhost$C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811\</nativeId>    <timestamp>Monday, July 31, 2023 04:27:07.772 AM</timestamp>    <fullyDefined>True</fullyDefined></JobId>
+    RSM_HPC_PLATFORMSTORAGEID = C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811\
+    RSM_HPC_NATIVEOPTIONS = 
+    ARC_ROOT = C:\Program Files\ANSYS Inc\ANSYS Student\v232\RSM\Config\scripts\..\..\ARC
+    RSM_HPC_KEYWORD = ARC
+    RSM_PYTHON_LOCALE = en-us
+Reading AWP_ROOT environment variable name ...
+    AWP_ROOT environment variable name is: AWP_ROOT232
+Reading Low Disk Space Warning Limit ...
+    Low disk space warning threshold set at: 2.0GiB
+Reading File identifier ...
+    File identifier found as: 0e6371c5-37ba-4d24-9c77-4725ef884a2b
+Done reading control file.
+
+RSM_AWP_ROOT_NAME = AWP_ROOT232
+AWP_ROOT232 install directory: C:\Program Files\ANSYS Inc\ANSYS Student\v232
+RSM_MACHINES = btv-39026:2
+Number of nodes assigned for current job = 1 
+Machine list: ['btv-39026'] 
+Checking DisableUNCCheck ...
+Unable to read registry for HKEY_CURRENT_USER\Software\Microsoft\Command Processor
+Ignore verifying DisableUNCCheck, you may check it manually if not already done so.
+
+Start running job commands ...
+Running on machine : BTV-39026
+Current Directory: C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+Running command: C:\Program Files\ANSYS Inc\ANSYS Student\v232\SEC\SolverExecutionController\runsec.bat 
+Redirecting output to  None
+Final command arg list : ['C:\\Program Files\\ANSYS Inc\\ANSYS Student\\v232\\SEC\\SolverExecutionController\\runsec.bat']
+Running Process
+Running Solver : C:\Program Files\ANSYS Inc\ANSYS Student\v232\ansys\bin\winx64\ANSYS232.exe -b nolist -s noread -apip off -p ansys -i remote.dat -o solve.out -dis -np 2 -dir "C:/Users/vu.le/OneDrive - Bluetech Finland Oy/Tiedostot/GitHub/Fatigue/other document/Frame/_ProjectScratch/Scr9811"
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2023 R2         Build 23.2         UP20230531    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1 MB     Scratch Memory Requested         0 MB |
+ |  Maximum Database Used       1 MB     Maximum Scratch Memory Used      1 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =          0.062       Time  =  11:27:39          |
+ |        Elapsed Time (sec) =          1.000       Date  =  07/31/2023        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*
+Command Exit Code: 7
+Saving exit code file: C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811\exitcode_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    Exit code file: C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811\exitcode_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout has been created.
+Saving exit code file: C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811\exitcodeCommands_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout
+    Exit code file: C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811\exitcodeCommands_0e6371c5-37ba-4d24-9c77-4725ef884a2b.rsmout has been created.
+solve --> 
+
+solve -->  ANSYS LICENSE MANAGER ERROR:
+
+solve -->  Maximum licensed number of demo users already reached.
+
+solve --> 
+
+solve -->  *** ERROR - ANSYS license not available.
+
+solve --> 
+
+solve --> +--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+solve --> 
+
+solve --> Release: 2023 R2            Build: 23.2       Update: UP20230531   Platform: WINDOWS x64 
+
+solve --> Date Run: 07/31/2023   Time: 11:27     Process ID: 25368
+
+solve --> Operating System: Windows 10  (Build: 19044)
+
+solve --> 
+
+solve --> Processor Model: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+
+solve --> 
+
+solve --> Compiler: Intel(R) Fortran Compiler Version 19.0.5  (Build: 20190815)
+
+solve -->           Intel(R) C/C++ Compiler Version 19.0.5  (Build: 20190815)
+
+solve -->           Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191125
+
+solve -->           BLAS Library supplied by Intel(R) MKL
+
+solve --> 
+
+solve --> Number of machines requested            :    1
+
+solve --> Total number of cores available         :    8
+
+solve --> Number of physical cores available      :    4
+
+solve --> Number of processes requested           :    2
+
+solve --> Number of threads per process requested :    1
+
+solve --> Total number of cores requested         :    2 (Distributed Memory Parallel)               
+
+solve --> MPI Type: INTELMPI
+
+solve --> MPI Version: Intel(R) MPI Library 2021.8 for Windows* OS
+
+solve --> 
+
+solve --> 
+
+solve --> GPU Acceleration: Not Requested
+
+solve --> 
+
+solve --> Job Name: file0
+
+solve --> 
+
+solve -->   Core                Machine Name   Working Directory
+
+solve -->  -----------------------------------------------------
+
+solve -->      0                   BTV-39026   C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+
+solve -->      1                   BTV-39026   C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\other document\Frame\_ProjectScratch\Scr9811
+
+solve -->  
+
+solve -->  
+
+solve --> 
+
+solve --> Total CPU time for main thread                    :        0.5 seconds
+
+solve --> Total CPU time summed for all threads             :        0.1 seconds
+
+solve --> 
+
+solve --> Elapsed time spent obtaining a license            :        0.0 seconds
+
+solve --> Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
+
+solve --> Elapsed time spent solution - preprocessing       :        0.0 seconds
+
+solve --> Elapsed time spent computing solution             :        0.0 seconds
+
+solve --> Elapsed time spent solution - postprocessing      :        0.0 seconds
+
+solve --> Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+
+solve -->  
+
+solve --> 
+
+solve --> Sum of disk space used on all processes            :        0.0 MB
+
+solve --> 
+
+solve --> Sum of memory used on all processes               :        4.0 MB
+
+solve --> Sum of memory allocated on all processes          :        0.0 MB
+
+solve --> Physical memory available                         :         32 GB
+
+solve --> Total amount of I/O written to disk               :        0.0 GB
+
+solve --> Total amount of I/O read from disk                :        0.0 GB
+
+solve --> 
+
+solve --> +------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+solve --> 
+
+solve --> 
+
+solve -->  *-----------------------------------------------------------------------------*
+
+solve -->  |                                                                             |
+
+solve -->  |                               RUN COMPLETED                                 |
+
+solve -->  |                                                                             |
+
+solve -->  |-----------------------------------------------------------------------------|
+
+solve -->  |                                                                             |
+
+solve -->  |  Ansys MAPDL 2023 R2         Build 23.2         UP20230531    WINDOWS x64   |
+
+solve -->  |                                                                             |
+
+solve -->  |-----------------------------------------------------------------------------|
+
+solve -->  |                                                                             |
+
+solve -->  |  Database Requested(-db)     1024 MB     Scratch Memory Requested      0 MB |
+
+solve -->  |  Max Database Used(Master)      1 MB     Max Scratch Used(Master)      1 MB |
+
+solve -->  |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)     1 MB |
+
+solve -->  |  Sum Database Used(All)         2 MB     Sum Scratch Used(All)         2 MB |
+
+solve -->  |                                                                             |
+
+solve -->  |-----------------------------------------------------------------------------|
+
+solve -->  |                                                                             |
+
+solve -->  |        CP Time      (sec) =          0.109       Time  =  11:27:39          |
+
+solve -->  |        Elapsed Time (sec) =          1.000       Date  =  07/31/2023        |
+
+solve -->  |                                                                             |
+
+solve -->  *-----------------------------------------------------------------------------*
+
+ClusterJobs Exiting with code: 7
+Individual Command Exit Codes are: [7]
