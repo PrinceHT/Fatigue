@@ -1,4 +1,4 @@
-using Fatigue.Model;
+﻿using Fatigue.Model;
 using OfficeOpenXml;
 using System.Collections.Generic;
 using System.Configuration;
@@ -20,7 +20,7 @@ namespace Fatigue
         List<UserInfo2> userList2 = new List<UserInfo2>();
         List<UserInfo2> dataPrint2 = new List<UserInfo2>();
         List<NormalDist> normalDists = new List<NormalDist>();
-        public double nomStress = 131.61, Wei = 1.1, kneeCycles = 1e7, yearinS = 20, v0 = 0.159, effThick = 30, ReferThick = 25, SCF = 3;
+        public double nomStress = 90, Wei = 1.1, kneeCycles = 1e7, yearinS = 20, v0 = 0.159, effThick = 30, ReferThick = 25, SCF = 3.1;
         public double Td, n0, q, gammam1, gammam2, kneeStress, S1h, gammadm1, gammadm2, Damage, Life, tSize;
 
         private void txtSCF_TextChanged(object sender, EventArgs e)
@@ -119,6 +119,7 @@ namespace Fatigue
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
+            UserInfo2 us = new UserInfo2();
             Td = 60 * 60 * 24 * 365 * yearinS;
             txtTd.Text = Td.ToString();
             n0 = v0 * Td;
@@ -138,22 +139,52 @@ namespace Fatigue
             txtS1h.Text = S1h.ToString("F3");
             alglib alglib = new alglib();
             gammadm1 = alglib.incompletegamma(1 + double.Parse(txtm1.Text) / Wei, S1h);
-            //gammadm1 = Gamma.CDF(1 + double.Parse(txtm1.Text) / Wei,1,S1h);
-            //NormalDist dist2 = new NormalDist(1 + double.Parse(txtm2.Text) / Wei, 1);
             gammadm2 = alglib.incompletegamma(1 + double.Parse(txtm2.Text) / Wei, S1h);
             txtgammadm1.Text = gammadm1.ToString("F3");
             txtgammadm2.Text = gammadm2.ToString("F3");
-            Damage = (Math.Pow(tSize, double.Parse(txtm1.Text)) * n0 / (Math.Pow(10, double.Parse(txtlogad1.Text)))) * (Math.Pow(q, double.Parse(txtm1.Text))) * (1 - gammadm1) * gammam1 + (Math.Pow(tSize, double.Parse(txtm2.Text)) * n0 / (Math.Pow(10, double.Parse(txtlogad2.Text)))) * (Math.Pow(q, double.Parse(txtm2.Text))) * (gammadm2) * gammam2;
+            Damage = (Math.Pow(tSize, double.Parse(txtm1.Text)) * 
+                n0 / (Math.Pow(10, double.Parse(txtlogad1.Text)))) * 
+                (Math.Pow(q, double.Parse(txtm1.Text))) * 
+                (1 - gammadm1) * gammam1 + (Math.Pow(tSize, double.Parse(txtm2.Text)) * 
+                n0 / (Math.Pow(10, double.Parse(txtlogad2.Text)))) * 
+                (Math.Pow(q, double.Parse(txtm2.Text))) * (gammadm2) * gammam2;
             txtDamage.Text = Damage.ToString("F3");
             Life = 20 / Damage;
             txtLife.Text = Life.ToString("F3");
+
+            us.SNCurve = cBoxSN.Text;
+            us.NomStress = double.Parse(txtnomStress.Text);
+            us.SCF = double.Parse(txtSCF.Text);
+            us.WeibullShape = double.Parse(txtWei.Text);
+            us.CycleN1 = double.Parse(txtkneeCycles.Text);
+            us.m1 = double.Parse(txtm1.Text);
+            us.logam1 = double.Parse(txtlogad1.Text);
+            us.m2 = double.Parse(txtm2.Text);
+            us.logam2 = double.Parse(txtlogad2.Text);
+            us.YearInService = double.Parse(txtYearinS.Text);
+            us.V0 = double.Parse(txtv0.Text);
+            us.EffectiveThickness = double.Parse(txteffThick.Text);
+            us.ReferThickness = double.Parse(txtReferThick.Text);
+            us.k = double.Parse(txtk.Text);
+            us.Td = double.Parse(txtTd.Text);
+            us.n0 = double.Parse(txtn0.Text);
+            us.q = double.Parse(txtq.Text);
+            us.ThickSize = double.Parse(txtThicksize.Text);
+            us.Gammam1 = double.Parse(txtgammam1.Text);
+            us.Gammam2 = double.Parse(txtgammam2.Text);
+            us.Gammadism1 = double.Parse(txtgammadm1.Text);
+            us.Gammadism2 = double.Parse(txtgammadm2.Text);
+            us.S1 = double.Parse(txtkneeStress.Text);
+            us.S1h = double.Parse(txtS1h.Text);
+            us.D = double.Parse(txtDamage.Text);
+            us.T = double.Parse(txtLife.Text);
+            userList2.Add(us);
         }
 
         static double F(double x)
         {
             MathNet.Numerics.Distributions.Normal result = new MathNet.Numerics.Distributions.Normal();
             return result.CumulativeDistribution(x);
-
         }
 
         public Form1()
@@ -206,6 +237,103 @@ namespace Fatigue
 
         }
 
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            // Khởi tạo một danh sách UserInfo2 (giả sử là userList2)
+            //List<UserInfo2> userList2 = new List<UserInfo2>();
+
+            // Lấy đường dẫn tệp Excel từ người dùng
+            string filePath = GetExcelFilePath();
+
+            if (string.IsNullOrEmpty(filePath))
+            {
+                // Người dùng đã hủy chọn tệp Excel
+                return;
+            }
+
+            FileInfo excelFile = new FileInfo(filePath);
+
+            using (ExcelPackage package = new ExcelPackage(excelFile))
+            {
+                // Kiểm tra xem Sheet1 đã tồn tại trong tệp Excel hay chưa
+                ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault(x => x.Name == "Sheet1");
+
+                // Nếu Sheet1 đã tồn tại, xóa nó
+                if (worksheet != null)
+                {
+                    package.Workbook.Worksheets.Delete(worksheet);
+                }
+
+                // Tạo một Sheet1 mới
+                worksheet = package.Workbook.Worksheets.Add("Sheet1");
+
+                // Ghi dữ liệu từ danh sách userList2 vào Sheet1
+                int row = 1;
+                int col = 1;
+                foreach (UserInfo2 userInfo in userList2)
+                {
+                    // Ghi dữ liệu từ userInfo vào các ô trong Sheet1 ở đây
+                    worksheet.Cells[row++, col].Value = userInfo.SNCurve;
+                    worksheet.Cells[row++, col].Value = userInfo.NomStress;
+                    worksheet.Cells[row++, col].Value = userInfo.SCF;
+                    worksheet.Cells[row++, col].Value = userInfo.WeibullShape;
+                    worksheet.Cells[row++, col].Value = userInfo.CycleN1;
+                    worksheet.Cells[row++, col].Value = userInfo.m1;
+                    worksheet.Cells[row++, col].Value = userInfo.logam1;
+                    worksheet.Cells[row++, col].Value = userInfo.m2;
+                    worksheet.Cells[row++, col].Value = userInfo.logam2;
+                    worksheet.Cells[row++, col].Value = userInfo.YearInService;
+                    worksheet.Cells[row++, col].Value = userInfo.V0;
+                    worksheet.Cells[row++, col].Value = userInfo.EffectiveThickness;
+                    worksheet.Cells[row++, col].Value = userInfo.ReferThickness;
+                    worksheet.Cells[row++, col].Value = userInfo.k;
+                    worksheet.Cells[row++, col].Value = userInfo.Td;
+                    worksheet.Cells[row++, col].Value = userInfo.n0;
+                    worksheet.Cells[row++, col].Value = userInfo.q;
+                    worksheet.Cells[row++, col].Value = userInfo.ThickSize;
+                    worksheet.Cells[row++, col].Value = userInfo.Gammam1;
+                    worksheet.Cells[row++, col].Value = userInfo.Gammam2;
+                    worksheet.Cells[row++, col].Value = userInfo.S1;
+                    worksheet.Cells[row++, col].Value = userInfo.S1h;
+                    worksheet.Cells[row++, col].Value = userInfo.Gammadism1;
+                    worksheet.Cells[row++, col].Value = userInfo.Gammadism2;
+                    worksheet.Cells[row++, col].Value = userInfo.D;
+                    worksheet.Cells[row++, col].Value = userInfo.T;
+
+                    // ...
+
+                    //row++;
+                }
+
+                // Lưu tệp Excel
+                package.Save();
+            }
+
+            // Thông báo thành công
+            MessageBox.Show("Dữ liệu đã được xuất ra tệp Excel thành công.");
+        }
+
+
+        private string GetExcelFilePath()
+        {
+            // Hiển thị hộp thoại để chọn đường dẫn tệp Excel
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "Excel Files (*.xlsx)|*.xlsx";
+                saveFileDialog.DefaultExt = "xlsx";
+                saveFileDialog.AddExtension = true;
+                saveFileDialog.FileName = "FatigueData";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    return saveFileDialog.FileName;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
     }
 }
 

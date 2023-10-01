@@ -82,6 +82,7 @@
             label25 = new Label();
             txtThicksize = new TextBox();
             label26 = new Label();
+            btnExport = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgExcel).BeginInit();
             SuspendLayout();
             // 
@@ -237,7 +238,7 @@
             txtnomStress.RightToLeft = RightToLeft.No;
             txtnomStress.Size = new Size(100, 23);
             txtnomStress.TabIndex = 14;
-            txtnomStress.Text = "131.61";
+            txtnomStress.Text = "90";
             txtnomStress.TextChanged += txtnomStress_TextChanged;
             // 
             // txtYearinS
@@ -549,7 +550,7 @@
             txtSCF.RightToLeft = RightToLeft.No;
             txtSCF.Size = new Size(100, 23);
             txtSCF.TabIndex = 51;
-            txtSCF.Text = "3";
+            txtSCF.Text = "3.1";
             txtSCF.TextChanged += txtSCF_TextChanged;
             // 
             // label25
@@ -579,11 +580,22 @@
             label26.TabIndex = 52;
             label26.Text = "Thickness or size correction";
             // 
+            // btnExport
+            // 
+            btnExport.Location = new Point(779, 359);
+            btnExport.Name = "btnExport";
+            btnExport.Size = new Size(100, 23);
+            btnExport.TabIndex = 54;
+            btnExport.Text = "Export";
+            btnExport.UseVisualStyleBackColor = true;
+            btnExport.Click += btnExport_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1428, 396);
+            Controls.Add(btnExport);
             Controls.Add(txtThicksize);
             Controls.Add(label26);
             Controls.Add(txtSCF);
@@ -701,5 +713,6 @@
         private Label label25;
         private TextBox txtThicksize;
         private Label label26;
+        private Button btnExport;
     }
 }

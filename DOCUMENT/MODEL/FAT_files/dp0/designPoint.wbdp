@@ -414,7 +414,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">5761</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 6785, "Input": 5759, "Output": 5759}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7010, "Input": 5759, "Output": 5759}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <unique-system-dir valType="String">SYS</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -440,7 +440,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">6333</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 6582, "Input": 6332, "Output": 6332}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6984, "Input": 6332, "Output": 6332}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Engineering Data": 2635, "Geometry": 5761, "Model": 6298, "Setup": 6314, "Solution": 6315, "Results": 6316}</last-update-regen-times>
       <unique-system-dir valType="String">SYS</unique-system-dir>
@@ -670,10 +670,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationResults</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">6779</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 6777, "Input": 6777, "Output": 6777}</last-modified-by-usage>
+      <last-updated valType="Int64">7005</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7003, "Input": 7003, "Output": 7003}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Engineering Data": 2635, "Geometry": 5761, "Model": 6333, "Setup": 6345, "Solution": 6346, "Results": 6773, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Engineering Data": 2635, "Geometry": 5761, "Model": 6333, "Setup": 6345, "Solution": 6346, "Results": 6999, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
