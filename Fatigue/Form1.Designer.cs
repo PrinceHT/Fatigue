@@ -286,7 +286,7 @@
             txteffThick.RightToLeft = RightToLeft.No;
             txteffThick.Size = new Size(100, 23);
             txteffThick.TabIndex = 22;
-            txteffThick.Text = "30";
+            txteffThick.Text = "20";
             txteffThick.TextChanged += txteffThick_TextChanged;
             // 
             // label11

@@ -20,7 +20,7 @@ namespace Fatigue
         List<UserInfo2> userList2 = new List<UserInfo2>();
         List<UserInfo2> dataPrint2 = new List<UserInfo2>();
         List<NormalDist> normalDists = new List<NormalDist>();
-        public double nomStress = 90, Wei = 1.1, kneeCycles = 1e7, yearinS = 20, v0 = 0.159, effThick = 30, ReferThick = 25, SCF = 3.1;
+        public double nomStress = 90, Wei = 1.1, kneeCycles = 1e7, yearinS = 20, v0 = 0.159, effThick = 20, ReferThick = 25, SCF = 3.1;
         public double Td, n0, q, gammam1, gammam2, kneeStress, S1h, gammadm1, gammadm2, Damage, Life, tSize;
 
         private void txtSCF_TextChanged(object sender, EventArgs e)
@@ -142,11 +142,11 @@ namespace Fatigue
             gammadm2 = alglib.incompletegamma(1 + double.Parse(txtm2.Text) / Wei, S1h);
             txtgammadm1.Text = gammadm1.ToString("F3");
             txtgammadm2.Text = gammadm2.ToString("F3");
-            Damage = (Math.Pow(tSize, double.Parse(txtm1.Text)) * 
-                n0 / (Math.Pow(10, double.Parse(txtlogad1.Text)))) * 
-                (Math.Pow(q, double.Parse(txtm1.Text))) * 
-                (1 - gammadm1) * gammam1 + (Math.Pow(tSize, double.Parse(txtm2.Text)) * 
-                n0 / (Math.Pow(10, double.Parse(txtlogad2.Text)))) * 
+            Damage = (Math.Pow(tSize, double.Parse(txtm1.Text)) *
+                n0 / (Math.Pow(10, double.Parse(txtlogad1.Text)))) *
+                (Math.Pow(q, double.Parse(txtm1.Text))) *
+                (1 - gammadm1) * gammam1 + (Math.Pow(tSize, double.Parse(txtm2.Text)) *
+                n0 / (Math.Pow(10, double.Parse(txtlogad2.Text)))) *
                 (Math.Pow(q, double.Parse(txtm2.Text))) * (gammadm2) * gammam2;
             txtDamage.Text = Damage.ToString("F3");
             Life = 20 / Damage;
@@ -301,8 +301,8 @@ namespace Fatigue
                     worksheet.Cells[row++, col].Value = userInfo.T;
 
                     // ...
-
-                    //row++;
+                    row = 1;
+                    col++;
                 }
 
                 // Lưu tệp Excel
