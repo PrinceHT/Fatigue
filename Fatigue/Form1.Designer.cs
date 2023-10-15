@@ -83,6 +83,7 @@
             txtThicksize = new TextBox();
             label26 = new Label();
             btnExport = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgExcel).BeginInit();
             SuspendLayout();
             // 
@@ -590,11 +591,22 @@
             btnExport.UseVisualStyleBackColor = true;
             btnExport.Click += btnExport_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(779, 15);
+            button1.Name = "button1";
+            button1.Size = new Size(97, 23);
+            button1.TabIndex = 55;
+            button1.Text = "Plot 1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1428, 396);
+            Controls.Add(button1);
             Controls.Add(btnExport);
             Controls.Add(txtThicksize);
             Controls.Add(label26);
@@ -714,5 +726,6 @@
         private TextBox txtThicksize;
         private Label label26;
         private Button btnExport;
+        private Button button1;
     }
 }
