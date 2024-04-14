@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Fatigue
-build_property.ProjectDir = C:\Users\ADMIN\Documents\GitHub\Fatigue\Fatigue\
+build_property.ProjectDir = C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

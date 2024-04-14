@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|c:\\users\\vu.le\\onedrive - bluetech finland oy\\tiedostot\\github\\fatigue\\fatigue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|solutionrelative:fatigue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|c:\\users\\vu.le\\onedrive - bluetech finland oy\\tiedostot\\github\\fatigue\\fatigue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|solutionrelative:fatigue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|c:\\users\\vu.le\\onedrive - bluetech finland oy\\tiedostot\\github\\fatigue\\fatigue\\model\\userinfo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|solutionrelative:fatigue\\model\\userinfo2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|c:\\users\\vu.le\\onedrive - bluetech finland oy\\tiedostot\\github\\fatigue\\fatigue\\model\\userinfo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|solutionrelative:fatigue\\model\\userinfo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|c:\\users\\vu.le\\onedrive - bluetech finland oy\\tiedostot\\github\\fatigue\\fatigue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|solutionrelative:fatigue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|c:\\users\\vu.le\\onedrive - bluetech finland oy\\tiedostot\\github\\fatigue\\fatigue\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|solutionrelative:fatigue\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\fatigue\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|solutionrelative:fatigue\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|c:\\users\\vu.le\\onedrive - bluetech finland oy\\tiedostot\\github\\fatigue\\fatigue\\model\\normaldist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39AB333E-8909-49A7-8910-E72A2D4CD691}|Fatigue\\Fatigue.csproj|solutionrelative:fatigue\\model\\normaldist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Form1.resx",
+              "RelativeDocumentMoniker": "Fatigue\\Form1.resx",
+              "ToolTip": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Form1.resx",
+              "RelativeToolTip": "Fatigue\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-04-13T04:55:40.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NormalDist.cs",
+              "DocumentMoniker": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Model\\NormalDist.cs",
+              "RelativeDocumentMoniker": "Fatigue\\Model\\NormalDist.cs",
+              "ToolTip": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Model\\NormalDist.cs",
+              "RelativeToolTip": "Fatigue\\Model\\NormalDist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T04:55:40.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Fatigue\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Form1.Designer.cs",
+              "RelativeToolTip": "Fatigue\\Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKECAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T04:55:40.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Program.cs",
+              "RelativeDocumentMoniker": "Fatigue\\Program.cs",
+              "ToolTip": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Program.cs",
+              "RelativeToolTip": "Fatigue\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T04:55:40.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Form1.cs",
+              "RelativeDocumentMoniker": "Fatigue\\Form1.cs",
+              "ToolTip": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Form1.cs",
+              "RelativeToolTip": "Fatigue\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T04:55:40.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserInfo2.cs",
+              "DocumentMoniker": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Model\\UserInfo2.cs",
+              "RelativeDocumentMoniker": "Fatigue\\Model\\UserInfo2.cs",
+              "ToolTip": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Model\\UserInfo2.cs",
+              "RelativeToolTip": "Fatigue\\Model\\UserInfo2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T04:55:40.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserInfo1.cs",
+              "DocumentMoniker": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Model\\UserInfo1.cs",
+              "RelativeDocumentMoniker": "Fatigue\\Model\\UserInfo1.cs",
+              "ToolTip": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Model\\UserInfo1.cs",
+              "RelativeToolTip": "Fatigue\\Model\\UserInfo1.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA6wBsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T04:55:40.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Form1.cs",
+              "RelativeDocumentMoniker": "Fatigue\\Form1.cs",
+              "ToolTip": "C:\\Users\\vu.le\\OneDrive - Bluetech Finland Oy\\Tiedostot\\GitHub\\Fatigue\\Fatigue\\Form1.cs [Design]",
+              "RelativeToolTip": "Fatigue\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T04:55:40.49Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
