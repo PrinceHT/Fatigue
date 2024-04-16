@@ -83,7 +83,6 @@
             txtThicksize = new TextBox();
             label26 = new Label();
             btnExport = new Button();
-            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgExcel).BeginInit();
             SuspendLayout();
             // 
@@ -101,9 +100,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(12, 15);
             label1.Name = "label1";
-            label1.Size = new Size(66, 15);
+            label1.Size = new Size(98, 15);
             label1.TabIndex = 1;
-            label1.Text = "S-N Curves";
+            label1.Text = "Đường Cong S-N";
             // 
             // cBoxSN
             // 
@@ -118,63 +117,63 @@
             label2.AutoSize = true;
             label2.Location = new Point(12, 44);
             label2.Name = "label2";
-            label2.Size = new Size(158, 15);
+            label2.Size = new Size(197, 15);
             label2.TabIndex = 3;
-            label2.Text = "Nominal Stress Range (MPA)";
+            label2.Text = "Phạm vi ứng suất danh nghĩa (MPa)";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(12, 102);
             label3.Name = "label3";
-            label3.Size = new Size(138, 15);
+            label3.Size = new Size(135, 15);
             label3.TabIndex = 4;
-            label3.Text = "Weibull shape parameter";
+            label3.Text = "Hệ số hình dáng weibull";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(12, 131);
             label4.Name = "label4";
-            label4.Size = new Size(168, 15);
+            label4.Size = new Size(181, 15);
             label4.TabIndex = 5;
-            label4.Text = "Cycles at knee in S-N curve N1";
+            label4.Text = "Chu kỳ tại khớp đường cong S-N";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(12, 160);
             label5.Name = "label5";
-            label5.Size = new Size(110, 15);
+            label5.Size = new Size(113, 15);
             label5.TabIndex = 6;
-            label5.Text = "m1 (N=<N1 cycles)";
+            label5.Text = "m1 (N=<N1 chu kỳ)";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(12, 189);
             label6.Name = "label6";
-            label6.Size = new Size(129, 15);
+            label6.Size = new Size(132, 15);
             label6.TabIndex = 7;
-            label6.Text = "logad1 (N=<N1 cycles)";
+            label6.Text = "logad1 (N=<N1 chu kỳ)";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(12, 247);
             label7.Name = "label7";
-            label7.Size = new Size(121, 15);
+            label7.Size = new Size(124, 15);
             label7.TabIndex = 9;
-            label7.Text = "logad2 (N>N1 cycles)";
+            label7.Text = "logad2 (N>N1 chu kỳ)";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Location = new Point(12, 218);
             label8.Name = "label8";
-            label8.Size = new Size(102, 15);
+            label8.Size = new Size(105, 15);
             label8.TabIndex = 8;
-            label8.Text = "m2 (N>N1 cycles)";
+            label8.Text = "m2 (N>N1 chu kỳ)";
             // 
             // txtm1
             // 
@@ -257,9 +256,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(12, 276);
             label9.Name = "label9";
-            label9.Size = new Size(81, 15);
+            label9.Size = new Size(137, 15);
             label9.TabIndex = 17;
-            label9.Text = "Year in service";
+            label9.Text = "Thời gian phục vụ (năm)";
             // 
             // txtv0
             // 
@@ -276,9 +275,9 @@
             label10.AutoSize = true;
             label10.Location = new Point(12, 305);
             label10.Name = "label10";
-            label10.Size = new Size(177, 15);
+            label10.Size = new Size(59, 15);
             label10.TabIndex = 19;
-            label10.Text = "Zero up-crossing freequency: v0";
+            label10.Text = "Tần số: v0";
             // 
             // txteffThick
             // 
@@ -295,9 +294,9 @@
             label11.AutoSize = true;
             label11.Location = new Point(12, 334);
             label11.Name = "label11";
-            label11.Size = new Size(137, 15);
+            label11.Size = new Size(126, 15);
             label11.TabIndex = 21;
-            label11.Text = "Effective thickness (mm)";
+            label11.Text = "Độ dày hiệu quả (mm)";
             // 
             // txtk
             // 
@@ -313,9 +312,9 @@
             label12.AutoSize = true;
             label12.Location = new Point(421, 15);
             label12.Name = "label12";
-            label12.Size = new Size(120, 15);
+            label12.Size = new Size(89, 15);
             label12.TabIndex = 23;
-            label12.Text = "Thickness exponent k";
+            label12.Text = "Số mũ độ dày k";
             // 
             // txtgammam1
             // 
@@ -349,9 +348,9 @@
             label14.AutoSize = true;
             label14.Location = new Point(421, 102);
             label14.Name = "label14";
-            label14.Size = new Size(146, 15);
+            label14.Size = new Size(113, 15);
             label14.TabIndex = 29;
-            label14.Text = "Weibull scale parameter: q";
+            label14.Text = "Hệ số tỉ lệ weibull: q";
             // 
             // txtn0
             // 
@@ -367,9 +366,9 @@
             label15.AutoSize = true;
             label15.Location = new Point(421, 73);
             label15.Name = "label15";
-            label15.Size = new Size(176, 15);
+            label15.Size = new Size(158, 15);
             label15.TabIndex = 27;
-            label15.Text = "Calculated number of cycles: n0";
+            label15.Text = "Số chu kỳ được tính toán: n0";
             // 
             // txtTd
             // 
@@ -385,9 +384,9 @@
             label16.AutoSize = true;
             label16.Location = new Point(421, 44);
             label16.Name = "label16";
-            label16.Size = new Size(111, 15);
+            label16.Size = new Size(128, 15);
             label16.TabIndex = 25;
-            label16.Text = "Td = Time in service";
+            label16.Text = "Td = Thời gian phục vụ";
             // 
             // txtLife
             // 
@@ -403,9 +402,9 @@
             label17.AutoSize = true;
             label17.Location = new Point(421, 363);
             label17.Name = "label17";
-            label17.Size = new Size(156, 15);
+            label17.Size = new Size(179, 15);
             label17.TabIndex = 45;
-            label17.Text = "Calculated life time T (years)";
+            label17.Text = "Tuổi thọ được tính toán T (years)";
             // 
             // txtDamage
             // 
@@ -421,9 +420,9 @@
             label18.AutoSize = true;
             label18.Location = new Point(421, 334);
             label18.Name = "label18";
-            label18.Size = new Size(163, 15);
+            label18.Size = new Size(158, 15);
             label18.TabIndex = 43;
-            label18.Text = "Calculated fatigue damage: D";
+            label18.Text = "Thiệt hại mỏi do tính toán: D";
             // 
             // txtgammadm2
             // 
@@ -439,9 +438,9 @@
             label19.AutoSize = true;
             label19.Location = new Point(421, 305);
             label19.Name = "label19";
-            label19.Size = new Size(232, 15);
+            label19.Size = new Size(225, 15);
             label19.TabIndex = 41;
-            label19.Text = "Gamma distribution P((1+m2/h),(S1/q)^h)";
+            label19.Text = "Phân phối Gamma P((1+m2/h),(S1/q)^h)";
             // 
             // txtgammadm1
             // 
@@ -457,9 +456,9 @@
             label20.AutoSize = true;
             label20.Location = new Point(421, 276);
             label20.Name = "label20";
-            label20.Size = new Size(232, 15);
+            label20.Size = new Size(225, 15);
             label20.TabIndex = 39;
-            label20.Text = "Gamma distribution P((1+m1/h),(S1/q)^h)";
+            label20.Text = "Phân phối Gamma P((1+m1/h),(S1/q)^h)";
             // 
             // txtS1h
             // 
@@ -493,9 +492,9 @@
             label22.AutoSize = true;
             label22.Location = new Point(421, 218);
             label22.Name = "label22";
-            label22.Size = new Size(164, 15);
+            label22.Size = new Size(231, 15);
             label22.TabIndex = 35;
-            label22.Text = "Stress at knee in S-N curve: S1";
+            label22.Text = "Ứng suất tại khớp của đường cong S-N: S1";
             // 
             // txtgammam2
             // 
@@ -530,9 +529,9 @@
             label24.AutoSize = true;
             label24.Location = new Point(12, 363);
             label24.Name = "label24";
-            label24.Size = new Size(111, 15);
+            label24.Size = new Size(137, 15);
             label24.TabIndex = 47;
-            label24.Text = "Reference thickness";
+            label24.Text = "Độ dày tham khảo (mm)";
             // 
             // btnCalculate
             // 
@@ -540,7 +539,7 @@
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(100, 23);
             btnCalculate.TabIndex = 49;
-            btnCalculate.Text = "Calculate";
+            btnCalculate.Text = "Tính toán";
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
@@ -559,9 +558,9 @@
             label25.AutoSize = true;
             label25.Location = new Point(12, 73);
             label25.Name = "label25";
-            label25.Size = new Size(150, 15);
+            label25.Size = new Size(169, 15);
             label25.TabIndex = 50;
-            label25.Text = "Hot spot stress factor (SCF)";
+            label25.Text = "Hệ số tập trung ứng suất (SCF)";
             // 
             // txtThicksize
             // 
@@ -577,9 +576,9 @@
             label26.AutoSize = true;
             label26.Location = new Point(421, 131);
             label26.Name = "label26";
-            label26.Size = new Size(151, 15);
+            label26.Size = new Size(216, 15);
             label26.TabIndex = 52;
-            label26.Text = "Thickness or size correction";
+            label26.Text = "Độ dày hoặc kích thước được chỉnh sửa";
             // 
             // btnExport
             // 
@@ -587,26 +586,15 @@
             btnExport.Name = "btnExport";
             btnExport.Size = new Size(100, 23);
             btnExport.TabIndex = 54;
-            btnExport.Text = "Export";
+            btnExport.Text = "Xuất";
             btnExport.UseVisualStyleBackColor = true;
             btnExport.Click += btnExport_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(779, 15);
-            button1.Name = "button1";
-            button1.Size = new Size(97, 23);
-            button1.TabIndex = 55;
-            button1.Text = "Plot 1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1428, 396);
-            Controls.Add(button1);
             Controls.Add(btnExport);
             Controls.Add(txtThicksize);
             Controls.Add(label26);
@@ -726,6 +714,5 @@
         private TextBox txtThicksize;
         private Label label26;
         private Button btnExport;
-        private Button button1;
     }
 }

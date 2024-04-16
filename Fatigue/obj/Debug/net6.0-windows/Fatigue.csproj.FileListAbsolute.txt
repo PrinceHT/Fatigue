@@ -106,8 +106,9 @@ C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\b
 C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\bin\Debug\net6.0-windows\WebDriver.dll
 C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
 C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\obj\Debug\net6.0-windows\Fatigue.csproj.CopyComplete
 C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\obj\Debug\net6.0-windows\Fatigue.genruntimeconfig.cache
 C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\obj\Debug\net6.0-windows\ref\Fatigue.dll
 C:\Users\ADMIN\Documents\GitHub\Fatigue\Fatigue\bin\Debug\net6.0-windows\MathNet.Numerics.dll
 C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\bin\Debug\net6.0-windows\MathNet.Numerics.dll
+C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\obj\Debug\net6.0-windows\Fatigue.sourcelink.json
+C:\Users\vu.le\OneDrive - Bluetech Finland Oy\Tiedostot\GitHub\Fatigue\Fatigue\obj\Debug\net6.0-windows\Fatigue.csproj.Up2Date

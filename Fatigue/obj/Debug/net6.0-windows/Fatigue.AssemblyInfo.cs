@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fatigue")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc0c1772d19c62641026aff3ce78fa8ae4d3223a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52617ca8badc4acdbf95b395a211f12359448f3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fatigue")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fatigue")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
